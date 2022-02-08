@@ -9,7 +9,7 @@ List<List<sObject>> searchResults = [FIND :searchString
  * 	named resultContacts and assign to it to the position zero result 
  *	returned from the SOSL search that initialized the searchResults property.
  */ 
-
+List<Contact> resultContacts = searchResults[0];
 
 /** TODO #2: Create a for-loop with an iterator of type Contact named  
  *           resultContact that iterates over the resultContacts variable. 
@@ -19,13 +19,27 @@ List<List<sObject>> searchResults = [FIND :searchString
  *             -- the first name of the resultContact
  *             -- the last name of the resultContact
  */
+for (Contact resultContact : resultContacts) {
+    System.debug('Contact id is: ' + resultContact.Id);
+    System.debug('Contact first name is: ' + resultContact.FirstName);
+    System.debug('Contact last name is: ' + resultContact.LastName);
+}
 
+//Contact<Contact> cList = searchResults[0]; its possible to do this other way first of all make this line as comment
+/*
+for(Contact c:(List<Contact>)searchResults[0]){
+    System.debug('Contact id is: ' + resultContact.Id);
+    System.debug('Contact first name is: ' + resultContact.FirstName);
+    System.debug('Contact last name is: ' + resultContact.LastName);
+}
+}
+*/
 
 /** TODO #3: Declare a variable whose type is a list of User sObjects 
  *	called resultUsers and assign it to the position one result returned 
  *	from the SOSL search above.
  */
-
+List<User> resultUsers = searchResults[1];
 
 for(User resultUser : resultUsers){
     System.debug('The User id is: ' + resultUser.id);
