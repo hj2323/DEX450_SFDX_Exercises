@@ -10,3 +10,5 @@
 //   to verify that it's working as intended.
 //--------------------------------------------------------------------------------------------
 
+SELECT Name, (SELECT Name FROM Courses__r) FROM Certification__c
+WHERE Id In (SELECT Certification__c FROM Course__c)
