@@ -17,6 +17,10 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Test_Holidays</members>
+		<name>StaticResource</name>
+	</types>
+	<types>
 		<members>Certification_Held__c</members>
 		<members>Error_Log__c</members>
 		<name>CustomObject</name>
