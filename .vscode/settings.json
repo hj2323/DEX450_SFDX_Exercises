@@ -3,5 +3,7 @@
     "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true,
     "debug.allowBreakpointsEverywhere": true,
     "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home",
-    "salesforcedx-vscode-core.retrieve-test-code-coverage": true
+    "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+    "salesforcedx-vscode-core.show-cli-success-msg": false,
+    "debug.confirmOnExit": "always"
 }
